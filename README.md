@@ -1,16 +1,12 @@
 # KiemTra_LapTrinhUngDungDiDong_2374802010455
 
-Nhánh `cau1`: **Câu 1 - Thiết kế giao diện Đăng nhập và xác thực dữ liệu**
+Nhánh `cau-2`: **Câu 2 - Điều hướng Activity và truyền nhận dữ liệu qua Intent**
 
 - **MSSV:** 2374802010455
 - **Họ và tên:** <Nguyễn Hồng Thanh>
 
 # Minh chứng
 
-**Thông báo lỗi khi dữ liệu không hợp lệ**
+**ProfileActivity hiển thị đúng Email đã nhập từ màn hình Đăng nhập**
 
-![Câu 1 - Lỗi xác thực](screenshots/cau1_validation_error.png)
-
-**Thông báo "Xác thực thành công!"**
-
-![Câu 1 - Xác thực thành công](screenshots/cau1_validation_success.png)
+![Câu 2 - Profile hiển thị Email](screenshots/cau2_profile_intent.png)

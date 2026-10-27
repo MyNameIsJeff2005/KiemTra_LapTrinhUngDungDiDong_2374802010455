@@ -1,5 +1,6 @@
 package vn.edu.vlu.kiemtra_laptrinhungdungdidong_2374802010455
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.util.Patterns
@@ -68,6 +69,13 @@ class LoginActivity : AppCompatActivity() {
             // 4. Dữ liệu hoàn toàn hợp lệ
             tvStatus.setTextColor(Color.parseColor("#2E7D32"))
             tvStatus.text = "Xác thực thành công!"
+
+            // 2.3 Explicit Intent: chuyển từ LoginActivity sang ProfileActivity
+            val intent = Intent(this, ProfileActivity::class.java)
+            // 2.4 Đóng gói Email bằng putExtra()
+            intent.putExtra(ProfileActivity.EXTRA_EMAIL, email)
+            // Không gọi finish() ở đây để nút "Đăng xuất" (finish()) quay lại được LoginActivity
+            startActivity(intent)
         }
     }
 }
